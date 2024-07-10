@@ -1,0 +1,89 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  line-height: 1.1;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-inline: 1%;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+img,
+video {
+  width: 100%;
+  height: 100%;
+}
+
+a,
+a:visited,
+a:active {
+  color: unset;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  background-color: #e9edc9;
+}
+
+.signup,
+.login {
+  display: none;
+  opacity: 0;
+  filter: blur(4px);
+}
+.signup.active,
+.login.active {
+  display: flex;
+  animation: fade 0.4s ease 0s forwards;
+}
+
+#signPassword.error,
+#signPasswordConfirm.error {
+  border: 0.1rem solid red;
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+.user .circle {
+  margin: 0 auto;
+  width: 66px;
+  height: 66px;
+  background-color: grey;
+}/*# sourceMappingURL=styles.css.map */
